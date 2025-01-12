@@ -44,6 +44,8 @@ class AudioPlayer extends HTMLElement {
         this.player
       );
 
+      this.audioContext.resume(); // Required to play audio on some browsers
+
       // Connect the audio graph: mediaElementSource -> stereoPanner -> destination
     }
     this.defineListeners();

@@ -11,19 +11,18 @@ class AudioVisualizer extends HTMLElement {
       <style>
         :host {
           display: block;
-          width: 100%;
-          height: 100%;
         }
         #visualizer-container {
           position: relative;
-          width: 900px;
-          height: 500px;
           border-radius: 800px; /* Rounded rectangle edges */
           overflow: hidden;
           box-shadow: 6px 6px 10px pink;
+          width: 100%;
         }
         canvas {
           display: block;
+          width: 100%;
+          height: 70%;
         }
       </style>
     `;
